@@ -1,0 +1,14 @@
+{
+  "sheet": "granny-hooks",
+  "about": "One row per system in Granny (the host game) that the mod adds to or changes. hookTarget (the real class or method in the game's code) stays null until Granny's install has been inspected on the PC. Route is the intended approach, not yet verified.",
+  "columns": ["id","system","whatItDoes","route","hookTarget","usesSound","usesWeapon"],
+  "rows": [
+    {"id":"player_fire","system":"player input","whatItDoes":"Fire, reload and slot-switch keys run the weapon rows","route":"in-game mod plugin patches the player controller update","hookTarget":null,"usesSound":["dry_click"],"usesWeapon":["knife","glock18","deagle","nova","ak47"]},
+    {"id":"hit_detection","system":"combat","whatItDoes":"Raycast from the camera on each shot; damages Granny when hit","route":"mod adds its own raycast, no game code change","hookTarget":null,"usesSound":["hit_flesh"],"usesWeapon":["glock18","deagle","nova","ak47"]},
+    {"id":"granny_health","system":"Granny AI","whatItDoes":"Gives Granny a health value (design: 300). At zero she goes down and stays down for the rest of the run","route":"mod adds a health component on Granny and disables her AI state machine at zero","hookTarget":null,"usesSound":[],"usesWeapon":[]},
+    {"id":"granny_hears_gunfire","system":"Granny AI","whatItDoes":"Each shot raises a noise event at the player's position with the weapon's noiseRadiusMeters, so Granny investigates","route":"reuse whatever noise or hearing input the game already has for dropped items and doors","hookTarget":null,"usesSound":[],"usesWeapon":["knife","glock18","deagle","nova","ak47"]},
+    {"id":"weapon_pickups","system":"world items","whatItDoes":"Places each weapon and its ammo at fixed spots in the house; picking up equips it","route":"mod spawns pickup objects at coordinates read from the house scene","hookTarget":null,"usesSound":["pickup_ammo"],"usesWeapon":["glock18","deagle","nova","ak47"]},
+    {"id":"cs2_asset_loader","system":"mod runtime","whatItDoes":"Finds the player's CS2 folder from Melty's {game:counter-strike-2} path, opens its VPK archives and loads the sounds and weapon models the rows name","route":"VPK reader library inside the mod; sounds first, models second","hookTarget":null,"usesSound":["knife_slash","knife_draw","glock_fire","glock_reload","glock_draw","deagle_fire","deagle_reload","deagle_draw","nova_fire","nova_reload","nova_draw","ak47_fire","ak47_reload","ak47_draw"],"usesWeapon":["knife","glock18","deagle","nova","ak47"]},
+    {"id":"ammo_hud","system":"UI","whatItDoes":"Shows magazine and reserve ammo for the held weapon","route":"mod draws its own small overlay","hookTarget":null,"usesSound":[],"usesWeapon":["glock18","deagle","nova","ak47"]}
+  ]
+}

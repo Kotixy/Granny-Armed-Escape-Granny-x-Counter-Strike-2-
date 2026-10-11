@@ -1,0 +1,24 @@
+{
+  "sheet": "audio",
+  "about": "One row per sound the mod plays. cs2SoundEventGuess is a best guess at the CS2 sound event name and is NOT verified. cs2VpkPath and verified are filled once the PC's CS2 install (game/csgo/pak01_dir.vpk and its sound event files) has been read. Nothing here is copied into the upload; the mod reads the player's own files at runtime.",
+  "columns": ["id","role","cs2SoundEventGuess","cs2VpkPath","volume","loop","verified"],
+  "rows": [
+    {"id":"knife_slash","role":"weapon","cs2SoundEventGuess":"Weapon_Knife.Slash","cs2VpkPath":null,"volume":0.8,"loop":false,"verified":false},
+    {"id":"knife_draw","role":"weapon","cs2SoundEventGuess":"Weapon_Knife.Deploy","cs2VpkPath":null,"volume":0.6,"loop":false,"verified":false},
+    {"id":"glock_fire","role":"weapon","cs2SoundEventGuess":"Weapon_Glock.Single","cs2VpkPath":null,"volume":1.0,"loop":false,"verified":false},
+    {"id":"glock_reload","role":"weapon","cs2SoundEventGuess":"Weapon_Glock.ClipOut / ClipIn","cs2VpkPath":null,"volume":0.8,"loop":false,"verified":false},
+    {"id":"glock_draw","role":"weapon","cs2SoundEventGuess":"Weapon_Glock.Draw","cs2VpkPath":null,"volume":0.6,"loop":false,"verified":false},
+    {"id":"deagle_fire","role":"weapon","cs2SoundEventGuess":"Weapon_Deagle.Single","cs2VpkPath":null,"volume":1.0,"loop":false,"verified":false},
+    {"id":"deagle_reload","role":"weapon","cs2SoundEventGuess":"Weapon_Deagle.ClipOut / ClipIn","cs2VpkPath":null,"volume":0.8,"loop":false,"verified":false},
+    {"id":"deagle_draw","role":"weapon","cs2SoundEventGuess":"Weapon_Deagle.Draw","cs2VpkPath":null,"volume":0.6,"loop":false,"verified":false},
+    {"id":"nova_fire","role":"weapon","cs2SoundEventGuess":"Weapon_Nova.Single","cs2VpkPath":null,"volume":1.0,"loop":false,"verified":false},
+    {"id":"nova_reload","role":"weapon","cs2SoundEventGuess":"Weapon_Nova.InsertShell","cs2VpkPath":null,"volume":0.8,"loop":false,"verified":false},
+    {"id":"nova_draw","role":"weapon","cs2SoundEventGuess":"Weapon_Nova.Draw","cs2VpkPath":null,"volume":0.6,"loop":false,"verified":false},
+    {"id":"ak47_fire","role":"weapon","cs2SoundEventGuess":"Weapon_AK47.Single","cs2VpkPath":null,"volume":1.0,"loop":false,"verified":false},
+    {"id":"ak47_reload","role":"weapon","cs2SoundEventGuess":"Weapon_AK47.ClipOut / ClipIn","cs2VpkPath":null,"volume":0.8,"loop":false,"verified":false},
+    {"id":"ak47_draw","role":"weapon","cs2SoundEventGuess":"Weapon_AK47.Draw","cs2VpkPath":null,"volume":0.6,"loop":false,"verified":false},
+    {"id":"dry_click","role":"weapon","cs2SoundEventGuess":"Default.ClipEmpty_Pistol","cs2VpkPath":null,"volume":0.7,"loop":false,"verified":false},
+    {"id":"hit_flesh","role":"impact","cs2SoundEventGuess":"Flesh.BulletImpact","cs2VpkPath":null,"volume":0.9,"loop":false,"verified":false},
+    {"id":"pickup_ammo","role":"ui","cs2SoundEventGuess":"Player.PickupWeapon","cs2VpkPath":null,"volume":0.7,"loop":false,"verified":false}
+  ]
+}

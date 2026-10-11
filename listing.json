@@ -1,0 +1,19 @@
+{
+  "status": "DRAFT. Written from the design, not from a running build. Re-check against the real build before using.",
+  "title": "Granny: Armed Escape",
+  "tagline": "Escape Granny's house with real Counter-Strike 2 guns and sounds.",
+  "description": "Same house, same Granny, but now you can fight back. Find a knife, pistols, a shotgun and an AK-47 hidden around the house, all using the weapons and sounds from your own Counter-Strike 2. Every shot is loud and Granny hears it, so decide when it's worth it. Put her down and she stays down. Single player. You need both Granny and Counter-Strike 2 installed.",
+  "games": [
+    {"slug": "pc-unity-playback-engine", "role": "primary", "note": "Granny, the host the mod runs in"},
+    {"slug": "counter-strike-2", "role": "companion", "note": "weapon models and sounds read from the player's own install, never shipped"}
+  ],
+  "multiplayer": false,
+  "license": "MIT (covers this mod's own code only, not Granny or Counter-Strike 2 content)",
+  "remixAllowed": true,
+  "credits": [
+    "Granny: its original creators",
+    "Counter-Strike 2: Valve (content read from the player's own copy, not included)",
+    "Mod author: TO FILL IN (name to show on the listing)",
+    "Third-party libraries bundled in the release: TO FILL IN once chosen, each with its author and license"
+  ]
+}

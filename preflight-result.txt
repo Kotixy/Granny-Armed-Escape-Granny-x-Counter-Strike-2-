@@ -1,0 +1,8 @@
+rows: weapons=5 audio=17 hooks=7
+unresolved references: 0
+unfilled or unverified cells: 50
+  audio.cs2VpkPath: 17
+  audio.verified: 17
+  granny-hooks.hookTarget: 7
+  weapons.cs2ViewModel: 5
+  weapons.pickupLocation: 4

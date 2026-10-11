@@ -1,0 +1,12 @@
+{
+  "sheet": "weapons",
+  "about": "One row per CS2 weapon in the first version. Design-owned cells are filled. Cells that depend on facts from the player's installed games are null until verified on the PC. Never copy CS2 files: cs2ViewModel and the sound refs are paths inside the player's own CS2 install, read at runtime.",
+  "columns": ["id","displayName","slot","auto","damageToGranny","magSize","reserveAmmo","roundsPerMinute","noiseRadiusMeters","pickupLocation","soundFire","soundReload","soundEquip","soundDry","cs2ViewModel"],
+  "rows": [
+    {"id":"knife","displayName":"Knife","slot":1,"auto":false,"damageToGranny":25,"magSize":0,"reserveAmmo":0,"roundsPerMinute":90,"noiseRadiusMeters":3,"pickupLocation":"start","soundFire":"knife_slash","soundReload":"none","soundEquip":"knife_draw","soundDry":"none","cs2ViewModel":null},
+    {"id":"glock18","displayName":"Glock-18","slot":2,"auto":false,"damageToGranny":30,"magSize":20,"reserveAmmo":60,"roundsPerMinute":300,"noiseRadiusMeters":25,"pickupLocation":null,"soundFire":"glock_fire","soundReload":"glock_reload","soundEquip":"glock_draw","soundDry":"dry_click","cs2ViewModel":null},
+    {"id":"deagle","displayName":"Desert Eagle","slot":2,"auto":false,"damageToGranny":70,"magSize":7,"reserveAmmo":21,"roundsPerMinute":150,"noiseRadiusMeters":40,"pickupLocation":null,"soundFire":"deagle_fire","soundReload":"deagle_reload","soundEquip":"deagle_draw","soundDry":"dry_click","cs2ViewModel":null},
+    {"id":"nova","displayName":"Nova","slot":3,"auto":false,"damageToGranny":90,"magSize":8,"reserveAmmo":16,"roundsPerMinute":70,"noiseRadiusMeters":45,"pickupLocation":null,"soundFire":"nova_fire","soundReload":"nova_reload","soundEquip":"nova_draw","soundDry":"dry_click","cs2ViewModel":null},
+    {"id":"ak47","displayName":"AK-47","slot":3,"auto":true,"damageToGranny":30,"magSize":30,"reserveAmmo":60,"roundsPerMinute":600,"noiseRadiusMeters":50,"pickupLocation":null,"soundFire":"ak47_fire","soundReload":"ak47_reload","soundEquip":"ak47_draw","soundDry":"dry_click","cs2ViewModel":null}
+  ]
+}
